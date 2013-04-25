@@ -85,6 +85,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.23)
     multi_json (1.7.2)
+    pg (0.15.1)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -162,6 +163,7 @@ DEPENDENCIES
   figaro (>= 0.6.3)
   hub (>= 1.10.2)
   jquery-rails
+  pg
   rails (= 3.2.12)
   rspec-rails (>= 2.12.2)
   sass-rails (~> 3.2.3)
