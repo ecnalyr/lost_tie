@@ -18,6 +18,7 @@
 // $body-bg: #fff;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "proxima_nova_semibold", 'Helvetica Neue', Arial, Helvetica, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -977,6 +978,7 @@
 
 // Background color for the top bar
 // $topbar-bg: #111;
+$topbar-bg: #fff;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -1008,8 +1010,10 @@
 // $topbar-menu-link-weight: bold;
 // $topbar-menu-link-color: #fff;
 // $topbar-menu-icon-color: #fff;
+$topbar-menu-icon-color: #9DA0A4; 
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
+$topbar-menu-icon-color-toggled: #111;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
@@ -1018,3 +1022,64 @@
 
 
 @import 'foundation';
+
+
+.nav-container{
+    background: #fff;
+    border-top: 3px solid #f7f7f7;
+    .expanded ul.right{
+        a{
+            border: 1px dotted #DDD;
+            border-bottom: 1px dotted #DDD;
+            padding-left: 22.5px !important;
+        }
+    }
+    .top-bar ul{
+        height: auto;
+        background: transparent;
+    }
+    .top-bar{
+        margin-top: 25px;
+        background: transparent;
+
+        ul > li a:not(.button){
+            color: #9DA0A4;
+            font-weight: 600;
+            padding: 0 15px 0 5px;
+            &:hover{
+                color: #232527;
+            }
+            background: transparent;
+        }
+        ul > li a:hover{
+                color: #232527;
+        }
+        ul > li a.active{
+            color: #232527;
+            background: transparent;
+        }
+        ul > li:hover, .nav-container .top-bar .top-bar ul > li.active{
+            background: transparent;
+        }
+        ul > ul{
+            background: transparent;
+        }
+
+
+    }
+    .top-bar ul li.toggle-topbar a{
+        border-color: rgba(17,17,17,.8) transparent transparent;
+    }
+    .top-bar > ul .name h1 a {
+        padding-left: 0;
+    }
+}
+
+.nav-divider{
+    background: url(../nav-divider.png) no-repeat 0px -2px;
+    padding: 8px 11px 8px 13px;
+    opacity: .7;
+    &:hover{
+        background: url(../nav-divider.png) no-repeat 0px -2px!important;
+    }
+}

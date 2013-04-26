@@ -34,4 +34,8 @@ LostTie::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Will allow Chrome to load sass source
+  config.sass.debug_info = true
+  config.sass.line_comments = false # source maps don't get output if this is true
 end
