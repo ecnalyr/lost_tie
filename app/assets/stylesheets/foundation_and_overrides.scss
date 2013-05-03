@@ -1,5 +1,6 @@
 // Required global settings and mixins for Foundation
 @import "foundation/foundation-global";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,500,600,700,800);
 
 // Settings file to override Foundation variables
 
@@ -18,7 +19,8 @@
 // $body-bg: #fff;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$body-font-family: "proxima_nova_semibold", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+// old$body-font-family: "proxima_nova_semibold", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$body-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -87,6 +89,7 @@ $body-font-family: "proxima_nova_semibold", 'Helvetica Neue', Arial, Helvetica, 
 
 // We use these to control header font styles
 // $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -1029,7 +1032,6 @@ $topbar-menu-icon-color-toggled: #111;
     border-top: 3px solid #f7f7f7;
     .expanded ul.right{
         a{
-            border: 1px dotted #DDD;
             border-bottom: 1px dotted #DDD;
             padding-left: 22.5px !important;
         }
