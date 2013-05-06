@@ -65,6 +65,7 @@ $sequencePreloader: ".sequence-preloader";
 	width: 100%;
 	height: 600px;
 	overflow: hidden;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 /* when in fallback mode (for browsers that don't support transitions) hide anything outside of the Sequence container */
@@ -243,47 +244,48 @@ $sequencePreloader: ".sequence-preloader";
 	/* !Preloader */
 
 	/* Frame Animations */
-	.iphone {
-		left: -450px;
+	.floating {
+		left: 0%;
 		opacity: 1;
 		position: absolute;
 		top: -520px;
+		z-index:-1;
 		@include prefixed(transform, rotate(-40deg));
 		@include prefixed(transition-duration, 1.5s);
 	}
 
-	#{$animateIn} .iphone {
-		left: 600px;
+	#{$animateIn} .floating {
+		left: 0%;
 		opacity: 1;
 		top: 20px;
 		@include prefixed(transform, rotate(0deg));
 		@include prefixed(transition-duration, 1.5s);
 	}
 
-	#{$animateOut} .iphone {
-		left: 1100px;
+	#{$animateOut} .floating {
+		left: 125%px;
 		opacity: 0;
 		top: -370px;
 		@include prefixed(transform, rotate(20deg));
 		@include prefixed(transition-duration, 1s);
 	}
 
-	.iphone-shadow {
-		left: 598px;
+	.floating-shadow {
+		left: 0%;
 		opacity: 0;
 		top: 490px;
 		position: absolute;
 		@include prefixed(transition-duration, 1.5s);
 	}
 
-	#{$animateIn} .iphone-shadow {
-		left: 598px;
+	#{$animateIn} .floating-shadow {
+		left: 25%;
 		opacity: 1;
 		@include prefixed(transition-duration, 1.5s);
 	}
 
-	#{$animateOut} .iphone-shadow {
-		left: 598px;
+	#{$animateOut} .floating-shadow {
+		left: 15%;
 		opacity: 0;
 		@include prefixed(transition-duration, 2s);
 	}
@@ -298,8 +300,8 @@ $sequencePreloader: ".sequence-preloader";
 	}
 
 	#{$animateIn} .intro {
-		left: 100px;
-		top: 220px;
+		left: 40%;
+		top: 80%;
 		@include prefixed(transform, rotate(0deg));
 		@include prefixed(transition-duration, 1.5s);
 	}
