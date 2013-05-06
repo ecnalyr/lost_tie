@@ -1076,17 +1076,11 @@ $topbar-menu-icon-color-toggled: #111;
     .top-bar > ul .name h1 a {
         padding-left: 0;
     }
-
-    .logo img{
-        float:left;
-    }
 }
 
 .nav-divider{
-    background: url(../nav-divider.png) no-repeat 0px -2px;
     padding: 8px 11px 8px 13px;
     opacity: .7;
     &:hover{
-        background: url(../nav-divider.png) no-repeat 0px -2px!important;
     }
 }
