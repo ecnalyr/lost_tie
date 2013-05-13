@@ -3,4 +3,7 @@ LostTie::Application.routes.draw do
   
   resources :contact, :only => :index
   match '/contact' => 'contact#index'
+
+  resources :portfolio, :only => :index
+  match '/portfolio' => 'portfolio#index'
 end
