@@ -8,15 +8,6 @@ ContactUs.setup do |config|
   # config.mailer_from = "contact@please-change-me.com"
   config.mailer_from = "contact@losttie.com"
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :address              => "losttie.com",
-    :port                 => 25,
-    :user_name            => ENV['MAILER_USER'],
-    :password             => ENV['MAILER)PASS'],
-    :authentication       => 'plain',
-    :enable_starttls_auto => true  }
-
   # Configure the e-mail address which should receive the contact form email notifications.
   config.mailer_to = "contact@losttie.com"
 
