@@ -55,6 +55,7 @@ LostTie::Application.configure do
   config.action_mailer.smtp_settings = {
     :address              => "localhost",
     :port                 => 25,
+    :domain               => "losttie.com",
     :user_name            => ENV['MAILER_USER'],
     :password             => ENV['MAILER_PASS'],
     :authentication       => 'plain',
