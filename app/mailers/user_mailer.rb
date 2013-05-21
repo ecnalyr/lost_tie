@@ -1,3 +1,3 @@
 class UserMailer < ActionMailer::Base
-  default :from => "contact@losttie.com"
+  default :from => "losttiellc@gmail.com"
 end
