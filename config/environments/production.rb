@@ -57,6 +57,7 @@ LostTie::Application.configure do
     :port                 => 25,
     :user_name            => ENV['MAILER_USER'],
     :password             => ENV['MAILER_PASS'],
+    :authentication       => 'none',
     :enable_starttls_auto => true  }
 
   # Enable threaded mode
