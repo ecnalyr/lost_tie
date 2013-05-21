@@ -985,6 +985,7 @@ $topbar-bg: #fff;
 
 // Height and margin
 // $topbar-height: 45px;
+$topbar-height: 75px;
 // $topbar-margin-bottom: emCalc(30px);
 
 // Control Input height for top bar
@@ -1072,9 +1073,6 @@ $topbar-menu-icon-color-toggled: #111;
     }
     .top-bar ul li.toggle-topbar a{
         border-color: rgba(17,17,17,.8) transparent transparent;
-    }
-    .top-bar > ul .name h1 a {
-        padding-left: 0;
     }
 }
 
