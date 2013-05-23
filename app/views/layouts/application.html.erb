@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Lost Tie" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Lost Tie" %>">
-    <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-    <%= yield(:head) %>
-    <%= favicon_link_tag 'favicon.png' %>
-  </head>
-  <body class="<%= controller_name %> <%= action_name %>">
-    <div id="container" class="container">
-      <header>
-        <%= render 'layouts/navigation' %>
-        <%= render 'layouts/messages' %>
-      </header>
-      <div id="main" role="main">
-        <%= yield %>
-      </div>
-      <footer class="row">
-        <%= render 'layouts/footer' %>
-      </footer>
-    </div> <!--! end of #container -->
-  </body>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "Lost Tie" %></title>
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Lost Tie" %>
+  ">
+  <%= stylesheet_link_tag "application", :media =>
+  "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= yield(:head) %>
+  <%= favicon_link_tag 'favicon.png' %></head>
+<body class="<%= controller_name %>
+  <%= action_name %>
+  ">
+  <div id="container" class="container">
+    <header>
+      <%= render 'layouts/navigation' %>
+      <%= render 'layouts/messages' %></header>
+    <div id="main" role="main">
+      <%= yield %></div>
+    <footer class="row">
+      <%= render 'layouts/footer' %></footer>
+  </div>
+  <!--! end of #container -->
+</body>
 </html>

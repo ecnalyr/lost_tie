@@ -1,12 +1,18 @@
 <div class="nav-container contain-to-grid">
   <nav class="top-bar">
     <ul class="title-area">
-      <!-- Title Area -->
       <li class="name">
-        <%= link_to image_tag("logo.png", :alt=>"logo"), root_path, :class => 'logo' %>
+        <%= link_to image_tag("logo.png", :alt=>"logo"), root_path, :class => 'logo' %></li>
+      <li class="toggle-topbar menu-icon show-for-medium">
+        <a href="#">
+          <span>Menu</span>
+        </a>
       </li>
-      <li class="toggle-topbar menu-icon show-for-medium"><a href="#"><span>Menu</span></a></li>
-      <li class="toggle-topbar menu-icon show-for-small"><a href="#"><span></span></a></li>
+      <li class="toggle-topbar menu-icon show-for-small">
+        <a href="#">
+          <span></span>
+        </a>
+      </li>
     </ul>
 
     <section class="top-bar-section">
@@ -14,9 +20,15 @@
 
       <!-- Right Nav Section -->
       <ul class="right">
-        <li><%= link_to "Home", root_path, :class => ('active' if current_page?root_path) %></a></li>
-        <li><%= link_to "Portfolio", portfolio_path, :class => ('active' if current_page?portfolio_path) %></li>
-        <li><%= link_to "Contact", contact_us_path, :class => ('active' if current_page?contact_us_path) %></a></li>
+        <li>
+          <%= link_to "Home", root_path, :class =>('active' if current_page?root_path) %></a>
+        </li>
+        <li>
+          <%= link_to "Portfolio", portfolio_path, :class =>('active' if current_page?portfolio_path) %>
+        </li>
+        <li>
+          <%= link_to "Contact", contact_us_path, :class =>('active' if current_page?contact_us_path) %></a>
+        </li>
       </ul>
     </section>
   </nav>
